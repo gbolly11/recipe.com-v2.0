@@ -23,29 +23,35 @@
         <div class="navbar-fixed">
             <nav class="white">
                 <div class="container nav-wrapper">
-                    <a class="brand-logo" href="">
-                        <img width="150px" src="img/logo.png" alt="">
-                    </a>
-                    <a class="sidenav-trigger left" href="#side">
-                        <i class="material-icons orange-text text-darken-4">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a class="orange-text text-darken-4" href="">Who We Are</a>
-                        </li>
-                        <li>
-                            <a class="orange-text text-darken-4" href="">Find a Recipe</a>
-                        </li>
-                        <li>
-                            <a class="orange-text text-darken-4" href="">Our Reviews</a>
-                        </li>
-                        <li>
-                            <a class="orange-text text-darken-4" href="">Contact Us</a>
-                        </li>
-                        <li>
+                    <div class="row">
+                        <div class="col s12 l2">
+                            <a class="brand-logo" href="">
+                                <img width="150px" src="img/logo.png" alt="">
+                            </a>
+                            <a class="sidenav-trigger left" href="#side">
+                                <i class="material-icons orange-text text-darken-4">menu</i>
+                            </a>  
+                        </div>
+                        <div class="col l7 push-l1">
+                            <ul class="hide-on-med-and-down center">
+                                <li>
+                                    <a class="orange-text text-darken-4" href="">Who We Are</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4" href="">Find a Recipe</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4" href="">Our Reviews</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4" href="">Contact Us</a>
+                                </li>
+                            </ul> 
+                        </div>
+                        <div class="col l1 push-l1 hide-on-med-and-down">
                             <a class="orange darken-4 btn" href="">Login</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -63,9 +69,11 @@
                 <a class="orange-text text-darken-4" href="#chicken-side">Contact Us</a>
             </li>
             <li>
-                <a class="orange-text text-darken-4 btn" href="#customers-side">Login</a>
+                <a class="orange darken-4 btn" href="#customers-side">Login</a>
             </li>
         </ul>
+        <!-- welcome video -->
+    
     </header>
     <main></main>
     <footer></footer>
@@ -75,6 +83,7 @@
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){});
+        $('.sidenav').sidenav();
     </script>
 </body>
 </html>
