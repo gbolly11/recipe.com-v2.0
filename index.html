@@ -27,6 +27,13 @@
             text-align: center;
             color: white;
         }
+
+        .card-image:hover .overlay {
+            border-radius: 10px;
+            opacity: 1;
+            cursor: pointer;
+            text-decoration: underline white;
+        }
     </style>
 </head>
 <body>
@@ -94,14 +101,70 @@
                 <div class="col s12 l6">
                     <h1>Every Dish Tells a Story.</h1>
                     <h4>Explore, cook, and create with us.</h4>
-                    <span class="btn orange darken-4">Get Started</span>
+                    <span style="border-radius: 5px;" class="btn orange darken-4">Get Started</span>
                 </div>
             </div>
         </div>
-    
     </header>
     <main>
-
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h2>Start your culinary journey <em class="orange-text text-darken-4">today.</em></h2>
+                    <p style="line-height: 2rem; font-size: 19px;">We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning vraious cuisines and cooking techniques.</p>
+                    <span style="border-radius: 5px;" class="orange darken-4 btn">Start your Journey</span>
+                </div>
+                <div class="col s12 l6">
+                    <img class="responsive-img" src="img/spagetti.png" alt="">
+                </div>
+                <div class="col s12 l12">
+                    <h2 class="center-align">Select a <em class="orange-text text-darken-4">category</em></h2>
+                </div>
+                <div class="col s12 l4">
+                    <a href="">
+                        <div class="card rounded-edges">
+                            <div class="card-image">
+                                <img src="img/cake-main.jpg" alt="" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text">Cakes
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 l4">
+                    <a href="">
+                        <div class="card rounded-edges">
+                            <div class="card-image">
+                                <img src="img/chicken-main.jpg" alt="" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text">Chicken
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 l4">
+                    <a href="">
+                        <div class="card rounded-edges">
+                            <div class="card-image">
+                                <img src="img/soup-main.jpg" alt="" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text">Soups
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
     </main>
     <footer></footer>
 
