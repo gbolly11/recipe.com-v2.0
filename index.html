@@ -8,17 +8,16 @@
     <meta name="author" content="Ezekiel Gbolahan Samuel">
     <meta name="tags" content="cakes,soup,food,recipe,cooking,sweets,sauces">
     <meta name="description" content="A Website for your cake and soup recipes">
-    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- material-icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- font-awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- material-icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         * {
-            font-family: "Josefin Sans", sans-serif !important; 
+            font-family: "Josefin Sans", sans-serif; 
         }
         .banner-text {
             position: absolute;
@@ -28,11 +27,39 @@
             color: white;
         }
 
+        .rounded-edges {
+            border-radius: 10px !important;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay-text {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
         .card-image:hover .overlay {
             border-radius: 10px;
             opacity: 1;
             cursor: pointer;
             text-decoration: underline white;
+        }
+
+        .gradient {
+        background-image: linear-gradient(white, #e65100);
         }
     </style>
 </head>
@@ -68,8 +95,8 @@
                                 </li>
                             </ul> 
                         </div>
-                        <div class="col l1 push-l1 hide-on-med-and-down">
-                            <a class="orange darken-4 btn" href="">Login</a>
+                        <div class="col l1 push-l2 hide-on-med-and-down">
+                            <a class="orange darken-4 btn rounded-edges" href="">Login</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +128,7 @@
                 <div class="col s12 l6">
                     <h1>Every Dish Tells a Story.</h1>
                     <h4>Explore, cook, and create with us.</h4>
-                    <span style="border-radius: 5px;" class="btn orange darken-4">Get Started</span>
+                    <span class="btn orange darken-4 rounded-edges">Get Started</span>
                 </div>
             </div>
         </div>
@@ -113,7 +140,7 @@
                 <div class="col s12 l6">
                     <h2>Start your culinary journey <em class="orange-text text-darken-4">today.</em></h2>
                     <p style="line-height: 2rem; font-size: 19px;">We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning vraious cuisines and cooking techniques.</p>
-                    <span style="border-radius: 5px;" class="orange darken-4 btn">Start your Journey</span>
+                    <span class="orange darken-4 btn rounded-edges">Start your Journey</span>
                 </div>
                 <div class="col s12 l6">
                     <img class="responsive-img" src="img/spagetti.png" alt="">
@@ -124,7 +151,7 @@
                 <div class="col s12 l4">
                     <a href="">
                         <div class="card rounded-edges">
-                            <div class="card-image">
+                            <div class="card-image rounded-edges">
                                 <img src="img/cake-main.jpg" alt="" class="responsive-img rounded-edges">
                                 <div class="overlay">
                                     <div class="overlay-text">Cakes
@@ -138,7 +165,7 @@
                 <div class="col s12 l4">
                     <a href="">
                         <div class="card rounded-edges">
-                            <div class="card-image">
+                            <div class="card-image rounded-edges">
                                 <img src="img/chicken-main.jpg" alt="" class="responsive-img rounded-edges">
                                 <div class="overlay">
                                     <div class="overlay-text">Chicken
@@ -152,7 +179,7 @@
                 <div class="col s12 l4">
                     <a href="">
                         <div class="card rounded-edges">
-                            <div class="card-image">
+                            <div class="card-image rounded-edges">
                                 <img src="img/soup-main.jpg" alt="" class="responsive-img rounded-edges">
                                 <div class="overlay">
                                     <div class="overlay-text">Soups
@@ -172,9 +199,9 @@
                     <img class="responsive-img" src="img/chef.jpg" alt="">
                 </div>
                 <div class="col s12 l6">
-                    <h3>Crafted by Culinary <em class="purple-text text-darken-4">Wizards.</em></h3>
+                    <h3>Crafted by Culinary <em class="pink-text text-darken-4">Wizards.</em></h3>
                     <p style="line-height: 2rem; font-size: 18px;">Discover a world of flavorful options that promise mouthwatering results, meticulously curated and and perfected by culinary experts, all at your fingertips. Easy as pie, isn't it?</p>
-                    <span style="border-radius: 5px;" class="purple darken-4 btn">Start cooking</span>
+                    <span class="pink darken-4 btn rounded-edges">Start cooking</span>
                 </div>
             </div>
         </div>
@@ -262,7 +289,7 @@
     </main>
 
     <!-- footer -->
-    <footer style="padding: 29px;">
+    <footer style="padding: 29px;" class="gradient">
         <div class="container">
             <div class="row">
                 <div class="col s12 l3">
